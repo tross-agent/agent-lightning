@@ -3,8 +3,8 @@
   "type": "module",
   "version": "0.3.1",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "eslint": "eslint .",
@@ -13,7 +13,7 @@
     "vitest": "vitest run --project unit",
     "vitest-storybook": "vitest run --project storybook",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "node init && storybook build",
     "chromatic": "chromatic"
   },
   "dependencies": {
