@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build:headless": "tsup scripts/headless-runner.ts --format cjs --out-dir dist --clean",
+    "build:headless": "node init && tsup scripts/headless-runner.ts --format cjs --out-dir dist --clean",
     "headless": "node dist/headless-runner.js"
   },
   "dependencies": {
